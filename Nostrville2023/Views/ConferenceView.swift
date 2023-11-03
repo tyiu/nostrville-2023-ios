@@ -52,7 +52,7 @@ struct ConferenceView_Previews: PreviewProvider {
         startDate: isoDateFormatter.date(from: "2023-11-09T09:00:00-06:00")!,
         endDate: isoDateFormatter.date(from: "2023-11-10T14:00:00-06:00")!,
         location: "Nashville, Tennessee",
-        timeZone: TimeZone(identifier: "America/Tell_City") ?? TimeZone.current,
+        timeZone: TimeZone(identifier: "America/Indiana/Tell_City") ?? TimeZone.current,
         sessions: sessions,
         organizers: organizers
     )
