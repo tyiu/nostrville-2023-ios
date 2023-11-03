@@ -45,12 +45,14 @@ struct SessionView: View {
 
             Divider()
 
-            Text("Speakers:")
-                .padding(.vertical, 2)
-                .font(.title)
-            ForEach(session.speakers, id: \.self) { speaker in
-                PersonView(person: speaker)
-                Divider()
+            if !session.speakers.isEmpty {
+                Text("Speakers:")
+                    .padding(.vertical, 2)
+                    .font(.title)
+                ForEach(session.speakers, id: \.self) { speaker in
+                    PersonView(person: speaker)
+                    Divider()
+                }
             }
         }
     }
