@@ -71,7 +71,7 @@ struct DayView: View {
 struct DayView_Previews: PreviewProvider {
     static var previews: some View {
         DayView(
-            sessions: ConferencesView_Previews.sessions,
+            sessions: ConferenceView_Previews.sessions,
             calendar: Calendar.current
         )
     }

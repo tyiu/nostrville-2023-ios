@@ -17,12 +17,10 @@ struct PersonView: View {
             Text(person.description)
                 .font(.subheadline)
             Link("Nostr Profile", destination: URL(string: "nostr:\(person.nostrPublicKey)")!)
-            AsyncImage(url: URL(string: person.picture)) { image in
-                image.resizable()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 200, height: 200)
+            Link("⚡️ Zap", destination: URL(string: person.lightning)!)
+            Image(person.picture)
+                .resizable()
+                .frame(maxWidth: 200, maxHeight: 200)
 
         }
     }
@@ -30,6 +28,6 @@ struct PersonView: View {
 
 struct PersonView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonView(person: ConferencesView_Previews.tyiu)
+        PersonView(person: ConferenceView_Previews.tyiu)
     }
 }

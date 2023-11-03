@@ -52,7 +52,7 @@ struct ScheduleView: View {
 struct ScheduleView_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleView(
-            conference: ConferencesView_Previews.nostrica
+            conference: ConferenceView_Previews.nostrville2023
         )
     }
 }

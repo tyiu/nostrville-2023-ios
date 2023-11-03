@@ -28,28 +28,22 @@ struct PeopleView: View {
             .pickerStyle(.segmented)
             List {
                 if selectedGroupIndex == 0 {
-                    ForEach(speakers, id: \.self) { speaker in
+                    ForEach(speakers.sorted { $0.name.lowercased() < $1.name.lowercased() }, id: \.self) { speaker in
                         HStack {
-                            AsyncImage(url: URL(string: speaker.picture)) { image in
-                                image.resizable()
-                            } placeholder: {
-                                ProgressView()
-                            }
-                            .frame(width: 100, height: 100)
+                            Image(speaker.picture)
+                                .resizable()
+                                .frame(maxWidth: 100, maxHeight: 100)
                             NavigationLink(destination: PersonView(person: speaker)) {
                                 Text(speaker.name)
                             }.navigationTitle("People")
                         }
                     }
                 } else {
-                    ForEach(organizers, id: \.self) { speaker in
+                    ForEach(organizers.sorted { $0.name.lowercased() < $1.name.lowercased() }, id: \.self) { speaker in
                         HStack {
-                            AsyncImage(url: URL(string: speaker.picture)) { image in
-                                image.resizable()
-                            } placeholder: {
-                                ProgressView()
-                            }
-                            .frame(width: 100, height: 100)
+                            Image(speaker.picture)
+                                .resizable()
+                                .frame(maxWidth: 100, maxHeight: 100)
                             NavigationLink(destination: PersonView(person: speaker)) {
                                 Text(speaker.name)
                             }.navigationTitle("People")
@@ -64,14 +58,8 @@ struct PeopleView: View {
 struct PeopleView_Previews: PreviewProvider {
     static var previews: some View {
         PeopleView(
-            speakers: [
-                ConferencesView_Previews.tyiu,
-                ConferencesView_Previews.jack,
-                ConferencesView_Previews.jb55,
-                ConferencesView_Previews.derekross
-            ],
-            organizers: [
-            ]
+            speakers: ConferenceView_Previews.nostrville2023.sessions.flatMap { $0.speakers },
+            organizers: ConferenceView_Previews.organizers
         )
     }
 }

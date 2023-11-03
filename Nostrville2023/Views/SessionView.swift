@@ -50,7 +50,6 @@ struct SessionView: View {
                 .font(.title)
             ForEach(session.speakers, id: \.self) { speaker in
                 PersonView(person: speaker)
-                Link("⚡️ Zap with comment or question", destination: URL(string: "lightning:tyiu@tyiu.xyz")!)
                 Divider()
             }
         }
@@ -59,6 +58,6 @@ struct SessionView: View {
 
 struct SessionView_Previews: PreviewProvider {
     static var previews: some View {
-        SessionView(session: ConferencesView_Previews.session1, calendar: Calendar.current)
+        SessionView(session: ConferenceView_Previews.sessionNipsRoundtable, calendar: Calendar.current)
     }
 }

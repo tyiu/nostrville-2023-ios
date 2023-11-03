@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct Nostrville2023App: App {
-    private let appState = AppState()
-
     var body: some Scene {
         WindowGroup {
-            ContentView(appState: appState)
+            NavigationStack {
+                VStack {
+                    ConferenceView(conference: ConferenceView_Previews.nostrville2023)
+                }
+                .navigationTitle("Nostrville 2023")
+            }
         }
     }
 }

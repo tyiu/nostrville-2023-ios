@@ -13,4 +13,5 @@ struct Person: Identifiable, Hashable {
     let name: String
     let description: String
     let picture: String
+    let lightning: String
 }
