@@ -354,8 +354,8 @@ Panel
             doc,
             odell
         ],
-        startTime: isoDateFormatter.date(from: "2023-11-09T14:30:00-06:00")!,
-        endTime: isoDateFormatter.date(from: "2023-11-09T15:30:00-06:00")!,
+        startTime: isoDateFormatter.date(from: "2023-11-09T15:30:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-09T16:30:00-06:00")!,
         stage: "Event Space",
         description:
 """
@@ -427,7 +427,7 @@ Networking
         name: "Live Rabbit Hole Recap + Happy Hour",
         speakers: [
         ],
-        startTime: isoDateFormatter.date(from: "2023-11-09T18:00:00-06:00")!,
+        startTime: isoDateFormatter.date(from: "2023-11-09T20:00:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T23:00:00-06:00")!,
         stage: "Acme Feed and Seed",
         description:
