@@ -76,7 +76,7 @@ struct ConferenceView_Previews: PreviewProvider {
     static let tyiu = Person(
         nostrPublicKey: "npub1yaul8k059377u9lsu67de7y637w4jtgeuwcmh5n7788l6xnlnrgs3tvjmf",
         name: "Terry Yiu",
-        description: "Founder @ Nostrville2023\nContributor @ Damus\nEngineer @ Cash App",
+        description: "Founder @ Confstr\nContributor @ Damus\nEngineer @ Cash App",
         picture: "tyiu",
         lightning: "tyiu@tyiu.xyz"
     )
