@@ -1,13 +1,13 @@
 //
-//  ConfstrUITestsLaunchTests.swift
-//  ConfstrUITests
+//  Nostrville2023UITestsLaunchTests.swift
+//  Nostrville2023UITests
 //
 //  Created by Terry Yiu on 5/9/23.
 //
 
 import XCTest
 
-final class ConfstrUITestsLaunchTests: XCTestCase {
+final class Nostrville2023UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

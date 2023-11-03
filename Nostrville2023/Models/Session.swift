@@ -1,6 +1,6 @@
 //
 //  Session.swift
-//  Confstr
+//  Nostrville2023
 //
 //  Created by Terry Yiu on 5/10/23.
 //

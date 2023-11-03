@@ -1,6 +1,6 @@
 //
 //  LoginView.swift
-//  Confstr
+//  Nostrville2023
 //
 //  Created by Terry Yiu on 6/18/23.
 //
@@ -45,7 +45,7 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Welcome to Confstr!")
+                Text("Welcome to Nostrville2023!")
                 Text("Your go-to conference app powered by Nostr.")
 
                 Form {
