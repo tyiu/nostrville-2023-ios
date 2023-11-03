@@ -423,8 +423,8 @@ Networking
     )
 
     static let sessionAfterparty = Session(
-        id: "live-rabbit-hole-recap-happy-hour",
-        name: "Live Rabbit Hole Recap + Happy Hour",
+        id: "afterparty",
+        name: "Afterparty",
         speakers: [
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T20:00:00-06:00")!,

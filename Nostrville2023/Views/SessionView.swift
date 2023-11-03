@@ -30,22 +30,26 @@ struct SessionView: View {
 
             Divider()
 
-            Text(session.stage)
-                .padding(.vertical, 2)
-                .font(.subheadline)
+            if !session.stage.isEmpty {
+                Text(session.stage)
+                    .padding(.vertical, 2)
+                    .font(.subheadline)
+            }
 
             Text(dateIntervalFormatter.string(from: session.startTime, to: session.endTime))
                 .font(.footnote)
 
-            Divider()
+            if !session.description.isEmpty {
+                Divider()
 
-            Text(session.description)
-                .padding(.vertical, 2)
-                .font(.subheadline)
-
-            Divider()
+                Text(session.description)
+                    .padding(.vertical, 2)
+                    .font(.subheadline)
+            }
 
             if !session.speakers.isEmpty {
+                Divider()
+
                 Text("Speakers:")
                     .padding(.vertical, 2)
                     .font(.title)

@@ -41,17 +41,21 @@ struct DayView: View {
                                         .padding(.vertical, 2)
                                         .font(.headline)
 
+                                    if !session.speakers.isEmpty {
+                                        Divider()
+
+                                        Text(session.speakers.map { $0.name }.joined(separator: ", ") )
+                                            .padding(.vertical, 2)
+                                            .font(.subheadline)
+                                    }
+
                                     Divider()
 
-                                    Text(session.speakers.map { $0.name }.joined(separator: ", ") )
-                                        .padding(.vertical, 2)
-                                        .font(.subheadline)
-
-                                    Divider()
-
-                                    Text(session.stage)
-                                        .padding(.vertical, 2)
-                                        .font(.subheadline)
+                                    if !session.stage.isEmpty {
+                                        Text(session.stage)
+                                            .padding(.vertical, 2)
+                                            .font(.subheadline)
+                                    }
 
                                     Text(dateIntervalFormatter.string(from: session.startTime, to: session.endTime))
                                         .font(.footnote)
