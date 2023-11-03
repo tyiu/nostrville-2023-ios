@@ -17,7 +17,7 @@ struct PersonView: View {
             Text(person.description)
                 .font(.subheadline)
             Link("Nostr Profile", destination: URL(string: "nostr:\(person.nostrPublicKey)")!)
-            Link("⚡️ Zap", destination: URL(string: person.lightning)!)
+            Link("⚡️ Zap", destination: URL(string: "lightning: \(person.lightning)")!)
             Image(person.picture)
                 .resizable()
                 .frame(maxWidth: 200, maxHeight: 200)
