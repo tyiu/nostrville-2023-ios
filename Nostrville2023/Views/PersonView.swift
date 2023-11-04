@@ -17,7 +17,21 @@ struct PersonView: View {
             Text(person.description)
                 .font(.subheadline)
             Link("Nostr Profile", destination: URL(string: "nostr:\(person.nostrPublicKey)")!)
+                .contextMenu {
+                    Button {
+                        UIPasteboard.general.string = person.nostrPublicKey
+                    } label: {
+                        Text("Copy Nostr public key", comment: "Context menu option for copying a user's Nostr public key.")
+                    }
+                }
             Link("⚡️ Zap \(person.lightning)", destination: URL(string: "lightning:\(person.lightning)")!)
+                .contextMenu {
+                    Button {
+                        UIPasteboard.general.string = person.lightning
+                    } label: {
+                        Text("Copy Lightning address", comment: "Context menu option for copying a user's Lightning address.")
+                    }
+                }
             Image(person.picture)
                 .resizable()
                 .frame(maxWidth: 200, maxHeight: 200)
