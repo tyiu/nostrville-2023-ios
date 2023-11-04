@@ -9,7 +9,9 @@ import SwiftUI
 import MapKit
 
 extension CLLocationCoordinate2D {
-    static let bitcoinPark = CLLocationCoordinate2D(latitude: 36.134666, longitude: -86.80073)
+    static let bitcoinParkLatitude = 36.134666
+    static let bitcoinParkLongitude = -86.80073
+    static let bitcoinPark = CLLocationCoordinate2D(latitude: bitcoinParkLatitude, longitude: bitcoinParkLongitude)
 }
 
 struct InfoView: View {
@@ -46,7 +48,7 @@ struct InfoView: View {
                 }
                 .buttonStyle(.bordered)
 
-                Link("Google Maps", destination: URL(string: "https://www.google.com/maps/search/?api=1&query=36.134666%2C%20-86.80073")!)
+                Link("Google Maps", destination: URL(string: "https://www.google.com/maps/search/?api=1&query=\(CLLocationCoordinate2D.bitcoinParkLatitude),\(CLLocationCoordinate2D.bitcoinParkLongitude)")!)
                     .buttonStyle(.bordered)
             }
             .padding(.bottom, 10)
