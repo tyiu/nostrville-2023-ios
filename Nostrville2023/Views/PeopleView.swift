@@ -32,6 +32,7 @@ struct PeopleView: View {
                         HStack {
                             Image(speaker.picture)
                                 .resizable()
+                                .aspectRatio(contentMode: .fit)
                                 .frame(maxWidth: 100, maxHeight: 100)
                             NavigationLink(destination: PersonView(person: speaker)) {
                                 Text(speaker.name)
@@ -43,6 +44,7 @@ struct PeopleView: View {
                         HStack {
                             Image(speaker.picture)
                                 .resizable()
+                                .aspectRatio(contentMode: .fit)
                                 .frame(maxWidth: 100, maxHeight: 100)
                             NavigationLink(destination: PersonView(person: speaker)) {
                                 Text(speaker.name)

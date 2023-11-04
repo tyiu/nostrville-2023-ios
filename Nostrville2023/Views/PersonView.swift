@@ -17,6 +17,7 @@ struct PersonView: View {
             Text(person.description)
                 .font(.subheadline)
             Link("Nostr Profile", destination: URL(string: "nostr:\(person.nostrPublicKey)")!)
+                .buttonStyle(.bordered)
                 .contextMenu {
                     Button {
                         UIPasteboard.general.string = person.nostrPublicKey
@@ -25,6 +26,7 @@ struct PersonView: View {
                     }
                 }
             Link("⚡️ Zap \(person.lightning)", destination: URL(string: "lightning:\(person.lightning)")!)
+                .buttonStyle(.bordered)
                 .contextMenu {
                     Button {
                         UIPasteboard.general.string = person.lightning
@@ -34,6 +36,7 @@ struct PersonView: View {
                 }
             Image(person.picture)
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: 200, maxHeight: 200)
 
         }

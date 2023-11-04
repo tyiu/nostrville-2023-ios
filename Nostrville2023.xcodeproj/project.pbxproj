@@ -22,6 +22,8 @@
 		3A453E282A0C614900897303 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A453E212A0C614900897303 /* PersonView.swift */; };
 		3A453E292A0C614900897303 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A453E222A0C614900897303 /* DayView.swift */; };
 		3A453E2A2A0C614900897303 /* ConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A453E232A0C614900897303 /* ConferenceView.swift */; };
+		3A55646D2AF6B4D1000674E6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55646C2AF6B4D1000674E6 /* InfoView.swift */; };
+		3A55646F2AF6B4DD000674E6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55646E2AF6B4DD000674E6 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		3A453E212A0C614900897303 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		3A453E222A0C614900897303 /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		3A453E232A0C614900897303 /* ConferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
+		3A55646C2AF6B4D1000674E6 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		3A55646E2AF6B4DD000674E6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 				3A453E212A0C614900897303 /* PersonView.swift */,
 				3A453E1E2A0C614800897303 /* ScheduleView.swift */,
 				3A453E1D2A0C614800897303 /* SessionView.swift */,
+				3A55646C2AF6B4D1000674E6 /* InfoView.swift */,
+				3A55646E2AF6B4DD000674E6 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,10 +336,12 @@
 				3A453E292A0C614900897303 /* DayView.swift in Sources */,
 				3A453E1C2A0C613600897303 /* Session.swift in Sources */,
 				3A453E242A0C614900897303 /* SessionView.swift in Sources */,
+				3A55646D2AF6B4D1000674E6 /* InfoView.swift in Sources */,
 				3A453E1A2A0C613600897303 /* Person.swift in Sources */,
 				3A453E252A0C614900897303 /* ScheduleView.swift in Sources */,
 				3A453E2A2A0C614900897303 /* ConferenceView.swift in Sources */,
 				3A453E282A0C614900897303 /* PersonView.swift in Sources */,
+				3A55646F2AF6B4DD000674E6 /* SettingsView.swift in Sources */,
 				3A453DDC2A0B348100897303 /* Nostrville2023App.swift in Sources */,
 				3A453E1B2A0C613600897303 /* Conference.swift in Sources */,
 			);
@@ -491,7 +499,7 @@
 				CODE_SIGN_ENTITLEMENTS = Nostrville2023/Nostrville2023.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Nostrville2023/Preview Content\"";
 				DEVELOPMENT_TEAM = S99A5B637C;
@@ -534,7 +542,7 @@
 				CODE_SIGN_ENTITLEMENTS = Nostrville2023/Nostrville2023.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Nostrville2023/Preview Content\"";
 				DEVELOPMENT_TEAM = S99A5B637C;
