@@ -11,11 +11,15 @@ struct PersonView: View {
     let person: Person
 
     var body: some View {
-        VStack(alignment: .center) {
+        ScrollView {
             Text(person.name)
                 .font(.headline)
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
             Text(person.description)
                 .font(.subheadline)
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
             Link("Nostr Profile", destination: URL(string: "nostr:\(person.nostrPublicKey)")!)
                 .buttonStyle(.bordered)
                 .contextMenu {
@@ -38,8 +42,8 @@ struct PersonView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: 200, maxHeight: 200)
-
         }
+        .padding(10)
     }
 }
 
