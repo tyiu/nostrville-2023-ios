@@ -9,18 +9,20 @@ import SwiftUI
 import MapKit
 
 extension CLLocationCoordinate2D {
-    static let bitcoinParkLatitude = 36.134666
-    static let bitcoinParkLongitude = -86.80073
-    static let bitcoinPark = CLLocationCoordinate2D(latitude: bitcoinParkLatitude, longitude: bitcoinParkLongitude)
+    static let bitcoinPark = CLLocationCoordinate2D(latitude: InfoView.bitcoinParkLatitude, longitude: InfoView.bitcoinParkLongitude)
 }
 
 struct InfoView: View {
-    private static let meetupUrl = URL(string: "https://www.meetup.com/bitcoinpark/events/292518506/")!
-
+    private static let meetupUrl = "https://www.meetup.com/bitcoinpark/events/292518506/"
+    private static let googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=\(InfoView.bitcoinParkLatitude),\(InfoView.bitcoinParkLongitude)"
+    private static let bitcoinParkAddress = "1912 21st Ave S, Nashville, TN 37212"
+    private static let bitcoinParkName = "Bitcoin Park"
+    static let bitcoinParkLatitude = 36.134666
+    static let bitcoinParkLongitude = -86.80073
     private let bitcoinPark = MKMapItem(placemark: MKPlacemark(coordinate: .bitcoinPark) )
 
     init() {
-        bitcoinPark.name = "Bitcoin Park"
+        bitcoinPark.name = InfoView.bitcoinParkName
     }
 
     var body: some View {
@@ -30,12 +32,14 @@ struct InfoView: View {
                 .aspectRatio(contentMode: .fit)
                 .padding(.bottom, 10)
 
-            Link("Meetup Event Page", destination: InfoView.meetupUrl)
-                .buttonStyle(.bordered)
+            if let url = URL(string: InfoView.meetupUrl) {
+                Link("Meetup Event Page", destination: url)
+                    .buttonStyle(.bordered)
+            }
 
             HStack {
-                Button("\(Image(systemName: "doc.on.doc")) 1912 21st Ave S, Nashville, TN 37212") {
-                    UIPasteboard.general.string = "1912 21st Ave S, Nashville, TN 37212"
+                Button("\(Image(systemName: "doc.on.doc")) \(InfoView.bitcoinParkAddress)") {
+                    UIPasteboard.general.string = InfoView.bitcoinParkAddress
                 }
                 .buttonStyle(.bordered)
             }
@@ -48,8 +52,10 @@ struct InfoView: View {
                 }
                 .buttonStyle(.bordered)
 
-                Link("Google Maps", destination: URL(string: "https://www.google.com/maps/search/?api=1&query=\(CLLocationCoordinate2D.bitcoinParkLatitude),\(CLLocationCoordinate2D.bitcoinParkLongitude)")!)
-                    .buttonStyle(.bordered)
+                if let url = URL(string: InfoView.googleMapsUrl) {
+                    Link("Google Maps", destination: url)
+                        .buttonStyle(.bordered)
+                }
             }
             .padding(.bottom, 10)
 

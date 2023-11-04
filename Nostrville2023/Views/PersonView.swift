@@ -20,24 +20,31 @@ struct PersonView: View {
                 .font(.subheadline)
                 .multilineTextAlignment(.leading)
                 .fixedSize(horizontal: false, vertical: true)
-            Link("Nostr Profile", destination: URL(string: "nostr:\(person.nostrPublicKey)")!)
-                .buttonStyle(.bordered)
-                .contextMenu {
-                    Button {
-                        UIPasteboard.general.string = person.nostrPublicKey
-                    } label: {
-                        Text("Copy Nostr public key", comment: "Context menu option for copying a user's Nostr public key.")
+
+            if let nostrUrl = URL(string: "nostr:\(person.nostrPublicKey)") {
+                Link("Nostr Profile", destination: nostrUrl)
+                    .buttonStyle(.bordered)
+                    .contextMenu {
+                        Button {
+                            UIPasteboard.general.string = person.nostrPublicKey
+                        } label: {
+                            Text("Copy Nostr public key", comment: "Context menu option for copying a user's Nostr public key.")
+                        }
                     }
-                }
-            Link("⚡️ Zap \(person.lightning)", destination: URL(string: "lightning:\(person.lightning)")!)
-                .buttonStyle(.bordered)
-                .contextMenu {
-                    Button {
-                        UIPasteboard.general.string = person.lightning
-                    } label: {
-                        Text("Copy Lightning address", comment: "Context menu option for copying a user's Lightning address.")
+            }
+
+            if let lightningUrl = URL(string: "lightning:\(person.lightning)") {
+                Link("⚡️ Zap \(person.lightning)", destination: lightningUrl)
+                    .buttonStyle(.bordered)
+                    .contextMenu {
+                        Button {
+                            UIPasteboard.general.string = person.lightning
+                        } label: {
+                            Text("Copy Lightning address", comment: "Context menu option for copying a user's Lightning address.")
+                        }
                     }
-                }
+            }
+
             Image(person.picture)
                 .resizable()
                 .aspectRatio(contentMode: .fit)

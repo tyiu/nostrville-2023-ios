@@ -34,31 +34,33 @@ struct DayView: View {
             ForEach(sortedStartTimes, id: \.self) { startTime in
                 Section(
                     content: {
-                        ForEach(sessionsByStartTime[startTime]!, id: \.self) { session in
-                            NavigationLink(destination: SessionView(session: session, calendar: calendar)) {
-                                VStack(alignment: .leading) {
-                                    /*@START_MENU_TOKEN@*/Text(session.name)/*@END_MENU_TOKEN@*/
-                                        .padding(.vertical, 2)
-                                        .font(.headline)
+                        if let sessions = sessionsByStartTime[startTime] {
+                            ForEach(sessions, id: \.self) { session in
+                                NavigationLink(destination: SessionView(session: session, calendar: calendar)) {
+                                    VStack(alignment: .leading) {
+                                        Text(session.name)
+                                            .padding(.vertical, 2)
+                                            .font(.headline)
 
-                                    if !session.speakers.isEmpty {
+                                        if !session.speakers.isEmpty {
+                                            Divider()
+
+                                            Text(session.speakers.map { $0.name }.joined(separator: ", ") )
+                                                .padding(.vertical, 2)
+                                                .font(.subheadline)
+                                        }
+
                                         Divider()
 
-                                        Text(session.speakers.map { $0.name }.joined(separator: ", ") )
-                                            .padding(.vertical, 2)
-                                            .font(.subheadline)
+                                        if !session.stage.isEmpty {
+                                            Text(session.stage)
+                                                .padding(.vertical, 2)
+                                                .font(.subheadline)
+                                        }
+
+                                        Text(dateIntervalFormatter.string(from: session.startTime, to: session.endTime))
+                                            .font(.footnote)
                                     }
-
-                                    Divider()
-
-                                    if !session.stage.isEmpty {
-                                        Text(session.stage)
-                                            .padding(.vertical, 2)
-                                            .font(.subheadline)
-                                    }
-
-                                    Text(dateIntervalFormatter.string(from: session.startTime, to: session.endTime))
-                                        .font(.footnote)
                                 }
                             }
                         }
