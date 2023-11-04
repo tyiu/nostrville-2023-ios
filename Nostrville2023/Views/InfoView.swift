@@ -59,6 +59,13 @@ From exploring new use cases for nostr, to discussing the potential impact of za
 
 RSVP as space will be limited.
 """)
+
+            Divider()
+                .frame(height: 4)
+                .overlay(.purple)
+                .padding(20)
+
+            Text("This Nostrville 2023 unofficial app was built by Terry Yiu (tyiu) to reimagine conference apps in a Nostr world. This work is being used to inspire Confstr, a general-purpose Nostr conference app, powered by NIP-52 calendar events. If you have feedback, please find him at the event or message him. He can be found on the People > Speakers page of the app.")
         }
         .padding(20)
     }
