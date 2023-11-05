@@ -62,7 +62,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "ODELL",
         description: "freedom tech is hope 🫡",
         picture: "odell",
-        lightning: "odell@vlt.ge"
+        lightningIdentifier: "odell@vlt.ge"
     )
 
     static let miljan = Person(
@@ -70,7 +70,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "miljan",
         description: "CEO of Primal. Building apps and services for Nostr.",
         picture: "miljan",
-        lightning: "miljan@primal.net"
+        lightningIdentifier: "miljan@primal.net"
     )
 
     static let tyiu = Person(
@@ -78,7 +78,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "Terry Yiu",
         description: "Founder @ Confstr\nContributor @ Damus\nEngineer @ Cash App",
         picture: "tyiu",
-        lightning: "tyiu@tyiu.xyz"
+        lightningIdentifier: "tyiu@tyiu.xyz"
     )
 
     static let tony = Person(
@@ -86,7 +86,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "Tony",
         description: "Building Mutiny Wallet",
         picture: "tony",
-        lightning: "TonyGiorgio@stacker.news"
+        lightningIdentifier: "TonyGiorgio@stacker.news"
     )
 
     static let rod = Person(
@@ -94,7 +94,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "Rod",
         description: "Nostrville 2023 🧡",
         picture: "rod",
-        lightning: "bitkite@getalby.com"
+        lightningIdentifier: "bitkite@getalby.com"
     )
 
     static let rockstar = Person(
@@ -102,7 +102,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "Uncle Rockstar",
         description: "#Bitcoin Uncle. Core contributor @BtcPayServer. Philosopher, Cypherpunk, Unifier. Short Twitter (and other BS), Long Nostr!",
         picture: "rockstar",
-        lightning: "rockstar@snort.social"
+        lightningIdentifier: "rockstar@snort.social"
     )
 
     static let mads = Person(
@@ -110,7 +110,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "mads",
         description: "Running bitcoin & ⚡️",
         picture: "mads",
-        lightning: "mads@getalby.com"
+        lightningIdentifier: "mads@getalby.com"
     )
 
     static let jb55 = Person(
@@ -118,7 +118,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "William Casarin",
         description: "I made damus, npubs and zaps. banned by apple & the ccp. my notes are not for sale.",
         picture: "jb55",
-        lightning: "jb55@jb55.com"
+        lightningIdentifier: "jb55@jb55.com"
     )
 
     static let yegor = Person(
@@ -126,7 +126,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "yegorpetrov",
         description: "#Bitcoin 🧡 #nostr  💜",
         picture: "yegor",
-        lightning: "yegorpetrov@getalby.com"
+        lightningIdentifier: "yegorpetrov@getalby.com"
     )
 
     static let sersleepy = Person(
@@ -134,7 +134,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "Ser Sleepy",
         description: "A frog of many trades 🐸",
         picture: "sersleepy",
-        lightning: "sersleepy@getalby.com"
+        lightningIdentifier: "sersleepy@getalby.com"
     )
 
     static let derekross = Person(
@@ -142,7 +142,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "Derek Ross",
         description: "Bitcoiner. Drinker of delicious beer. Cast iron skillet lover. Systems Administrator. Building NostrPlebs.com and NostrNests.com",
         picture: "derekross",
-        lightning: "derekross@getalby.com"
+        lightningIdentifier: "derekross@getalby.com"
     )
 
     static let island = Person(
@@ -150,7 +150,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "island",
         description: "₿ |⚡️| @Bitcoin Park | #nostrica | #nodestrich | #bitcoin2023 | #btcprague | #BH2023 | #TABconf | #nostrasia | primal.net/island",
         picture: "island",
-        lightning: "island@walletofsatoshi.com"
+        lightningIdentifier: "island@walletofsatoshi.com"
     )
 
     static let avi = Person(
@@ -158,7 +158,7 @@ struct ConferenceView_Previews: PreviewProvider {
         name: "Avi Burra",
         description: "Bitcoin Surrealist",
         picture: "avi",
-        lightning: "weirdparsnip79@walletofsatoshi.com"
+        lightningIdentifier: "weirdparsnip79@walletofsatoshi.com"
     )
 
     static let doc = Person(
@@ -171,7 +171,7 @@ struct ConferenceView_Previews: PreviewProvider {
         Think about it, do it.
 """,
         picture: "doc",
-        lightning: "0x72078c6c7c3e4026@ln.tips"
+        lightningIdentifier: "0x72078c6c7c3e4026@ln.tips"
     )
 
     static let tatum = Person(
@@ -188,7 +188,7 @@ I like talking about Bitcoin Mining
 Nostr class of Dec ‘22
 """,
         picture: "tatum",
-        lightning: "tatumturnup@walletofsatoshi.com"
+        lightningIdentifier: "tatumturnup@walletofsatoshi.com"
     )
 
     static let roya = Person(
@@ -196,7 +196,7 @@ Nostr class of Dec ‘22
         name: "roya",
         description: "",
         picture: "roya",
-        lightning: "roya@getalby.com"
+        lightningIdentifier: "roya@getalby.com"
     )
 
     static let vanessa = Person(
@@ -204,7 +204,7 @@ Nostr class of Dec ‘22
         name: "Vanessa",
         description: "Marketer, mom, living at @damus headquarters",
         picture: "vanessa",
-        lightning: "vanessagray31@getalby.com"
+        lightningIdentifier: "vanessagray31@getalby.com"
     )
 
     static let susie = Person(
@@ -212,7 +212,7 @@ Nostr class of Dec ‘22
         name: "Susiebdds",
         description: "The artist formerly known as Beefybush79@walletofsatoshi.com",
         picture: "susie",
-        lightning: "beefybush69@walletofsatoshi.com"
+        lightningIdentifier: "beefybush69@walletofsatoshi.com"
     )
 
     static let preston = Person(
@@ -220,7 +220,7 @@ Nostr class of Dec ‘22
         name: "preston",
         description: "Bitcoin & books. My bitcoin can remain in cold storage far longer than the market can remain irrational. @PrestonPysh on Twitter.",
         picture: "preston",
-        lightning: "prestonpysh@getalby.com"
+        lightningIdentifier: "prestonpysh@getalby.com"
     )
 
     static let corndalorian = Person(
@@ -228,7 +228,7 @@ Nostr class of Dec ‘22
         name: "corndalorian",
         description: "bitcoin. memes. music. nostr report. 💜",
         picture: "corndalorian",
-        lightning: "corn@walletofsatoshi.com"
+        lightningIdentifier: "corn@walletofsatoshi.com"
     )
 
     static let quietWarrior = Person(
@@ -240,7 +240,7 @@ Nostr class of Dec ‘22
         #Plebchain #Zapathon
 """,
         picture: "quietwarrior",
-        lightning: "QW@WalletOfSatoshi.com"
+        lightningIdentifier: "QW@WalletOfSatoshi.com"
     )
 
     static let sessionWelcomeAndGoals = Session(

@@ -24,6 +24,12 @@
 		3A453E2A2A0C614900897303 /* ConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A453E232A0C614900897303 /* ConferenceView.swift */; };
 		3A55646D2AF6B4D1000674E6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55646C2AF6B4D1000674E6 /* InfoView.swift */; };
 		3A55646F2AF6B4DD000674E6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55646E2AF6B4DD000674E6 /* SettingsView.swift */; };
+		3A5564712AF6D57C000674E6 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564702AF6D57C000674E6 /* Wallet.swift */; };
+		3A5564772AF70501000674E6 /* Bech32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564762AF70501000674E6 /* Bech32.swift */; };
+		3A5564792AF727F6000674E6 /* LNUrlPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564782AF727F6000674E6 /* LNUrlPay.swift */; };
+		3A55647B2AF73F99000674E6 /* Data+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55647A2AF73F99000674E6 /* Data+Encoding.swift */; };
+		3A55647E2AF75E11000674E6 /* String+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55647D2AF75E11000674E6 /* String+Hex.swift */; };
+		3A5564832AF76D6D000674E6 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564822AF76D6D000674E6 /* TipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		3A453E232A0C614900897303 /* ConferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
 		3A55646C2AF6B4D1000674E6 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		3A55646E2AF6B4DD000674E6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3A5564702AF6D57C000674E6 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		3A5564762AF70501000674E6 /* Bech32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bech32.swift; sourceTree = "<group>"; };
+		3A5564782AF727F6000674E6 /* LNUrlPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNUrlPay.swift; sourceTree = "<group>"; };
+		3A55647A2AF73F99000674E6 /* Data+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Encoding.swift"; sourceTree = "<group>"; };
+		3A55647D2AF75E11000674E6 /* String+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hex.swift"; sourceTree = "<group>"; };
+		3A5564822AF76D6D000674E6 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				3A453E152A0C611300897303 /* Models */,
+				3A5564752AF704DA000674E6 /* Nostr */,
 				3A453E162A0C611800897303 /* Views */,
 				3A453DDB2A0B348100897303 /* Nostrville2023App.swift */,
 				3A453DDF2A0B348200897303 /* Assets.xcassets */,
@@ -156,6 +169,8 @@
 				3A453E182A0C613600897303 /* Conference.swift */,
 				3A453E172A0C613500897303 /* Person.swift */,
 				3A453E192A0C613600897303 /* Session.swift */,
+				3A5564702AF6D57C000674E6 /* Wallet.swift */,
+				3A5564782AF727F6000674E6 /* LNUrlPay.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,8 +186,19 @@
 				3A453E1D2A0C614800897303 /* SessionView.swift */,
 				3A55646C2AF6B4D1000674E6 /* InfoView.swift */,
 				3A55646E2AF6B4DD000674E6 /* SettingsView.swift */,
+				3A5564822AF76D6D000674E6 /* TipView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3A5564752AF704DA000674E6 /* Nostr */ = {
+			isa = PBXGroup;
+			children = (
+				3A5564762AF70501000674E6 /* Bech32.swift */,
+				3A55647A2AF73F99000674E6 /* Data+Encoding.swift */,
+				3A55647D2AF75E11000674E6 /* String+Hex.swift */,
+			);
+			path = Nostr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,14 +358,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5564712AF6D57C000674E6 /* Wallet.swift in Sources */,
 				3A453E272A0C614900897303 /* PeopleView.swift in Sources */,
+				3A5564792AF727F6000674E6 /* LNUrlPay.swift in Sources */,
 				3A453E292A0C614900897303 /* DayView.swift in Sources */,
 				3A453E1C2A0C613600897303 /* Session.swift in Sources */,
+				3A55647E2AF75E11000674E6 /* String+Hex.swift in Sources */,
 				3A453E242A0C614900897303 /* SessionView.swift in Sources */,
 				3A55646D2AF6B4D1000674E6 /* InfoView.swift in Sources */,
+				3A5564772AF70501000674E6 /* Bech32.swift in Sources */,
 				3A453E1A2A0C613600897303 /* Person.swift in Sources */,
 				3A453E252A0C614900897303 /* ScheduleView.swift in Sources */,
+				3A55647B2AF73F99000674E6 /* Data+Encoding.swift in Sources */,
 				3A453E2A2A0C614900897303 /* ConferenceView.swift in Sources */,
+				3A5564832AF76D6D000674E6 /* TipView.swift in Sources */,
 				3A453E282A0C614900897303 /* PersonView.swift in Sources */,
 				3A55646F2AF6B4DD000674E6 /* SettingsView.swift in Sources */,
 				3A453DDC2A0B348100897303 /* Nostrville2023App.swift in Sources */,

@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @AppStorage("wallet") var selectedWallet: Wallet = .system
+
     var body: some View {
-        Text("Settings")
+        Form {
+            Section(
+                content: {
+                    Picker("Lightning Wallet", selection: $selectedWallet) {
+                        ForEach(Wallet.allCases) { wallet in
+                            Text(wallet.model.displayName)
+                        }
+                    }
+                },
+                header: {
+                    Text("Lightning Wallet")
+                }
+            )
+        }
+        .navigationTitle("Settings")
     }
 }
 

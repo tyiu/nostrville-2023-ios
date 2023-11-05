@@ -38,9 +38,14 @@ struct InfoView: View {
             }
 
             HStack {
-                Button("\(Image(systemName: "doc.on.doc")) \(InfoView.bitcoinParkAddress)") {
-                    UIPasteboard.general.string = InfoView.bitcoinParkAddress
-                }
+                Button(
+                    action: {
+                        UIPasteboard.general.string = InfoView.bitcoinParkAddress
+                    },
+                    label: {
+                        Label(InfoView.bitcoinParkAddress, systemImage: "doc.on.doc")
+                    }
+                )
                 .buttonStyle(.bordered)
             }
 

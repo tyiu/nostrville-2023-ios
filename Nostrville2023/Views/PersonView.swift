@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct PersonView: View {
+    @State var satsString: String = "1000"
+    @State var comment: String = "Thanks for providing value at Nostrville!"
+    @State var showTipSheet: Bool = false
+
     let person: Person
 
     var body: some View {
@@ -33,16 +37,18 @@ struct PersonView: View {
                     }
             }
 
-            if let lightningUrl = URL(string: "lightning:\(person.lightning)") {
-                Link("⚡️ Zap \(person.lightning)", destination: lightningUrl)
-                    .buttonStyle(.bordered)
-                    .contextMenu {
-                        Button {
-                            UIPasteboard.general.string = person.lightning
-                        } label: {
-                            Text("Copy Lightning address", comment: "Context menu option for copying a user's Lightning address.")
-                        }
+            if let lightningIdentifier = person.lightningIdentifier, person.lnUrl != nil {
+                Button("⚡️ Tip with Lightning") {
+                    showTipSheet = true
+                }
+                .buttonStyle(.bordered)
+                .contextMenu {
+                    Button {
+                        UIPasteboard.general.string = person.lightningIdentifier
+                    } label: {
+                        Label(lightningIdentifier, systemImage: "doc.on.doc")
                     }
+                }
             }
 
             Image(person.picture)
@@ -51,6 +57,9 @@ struct PersonView: View {
                 .frame(maxWidth: 200, maxHeight: 200)
         }
         .padding(10)
+        .sheet(isPresented: $showTipSheet, onDismiss: { showTipSheet = false }, content: {
+            TipView(person: person, showTipSheet: $showTipSheet)
+        })
     }
 }
 
