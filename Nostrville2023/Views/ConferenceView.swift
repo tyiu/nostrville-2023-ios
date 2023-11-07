@@ -65,6 +65,21 @@ struct ConferenceView_Previews: PreviewProvider {
         lightningIdentifier: "weirdparsnip79@walletofsatoshi.com"
     )
 
+    static let david = Person(
+        nostrPublicKey: "npub1u5njm6g5h5cpw4wy8xugu62e5s7f6fnysv0sj0z3a8rengt2zqhsxrldq3",
+        name: "David Strayhorn",
+        description:
+"""
+builder of Pretty Good Apps
+GitHub.com/wds4/pretty-good
+
+DCoSL: decentralized curation of simple lists
+GitHub.com/wds4/DCoSL
+""",
+        picture: "david",
+        lightningIdentifier: "LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHH2MN4WDJKGANFDAKXZWPKY4NTAH"
+    )
+
     static let derekross = Person(
         nostrPublicKey: "npub18ams6ewn5aj2n3wt2qawzglx9mr4nzksxhvrdc4gzrecw7n5tvjqctp424",
         name: "Derek Ross",
@@ -138,14 +153,6 @@ Zaps go to Bitcoin Berlin 🇸🇻 bitcoinberlin@blink.sv
         description: "Bitcoin & books. My bitcoin can remain in cold storage far longer than the market can remain irrational. @PrestonPysh on Twitter.",
         picture: "preston",
         lightningIdentifier: "prestonpysh@getalby.com"
-    )
-
-    static let prettyGood = Person(
-        nostrPublicKey: "prettygood",
-        name: "pretty good",
-        description: nil,
-        picture: nil,
-        lightningIdentifier: nil
     )
 
     static let quietWarrior = Person(
@@ -511,7 +518,7 @@ Networking
         speakers: [
             zach,
             seth,
-            prettyGood,
+            david,
             kim
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
