@@ -108,7 +108,8 @@ class Bech32 {
         guard let strBytes = str.data(using: .utf8) else {
             throw DecodingError.nonUTF8String
         }
-        guard strBytes.count <= 90 else {
+        // tyiu had to increased byte count from 90 to 2024 (copied from Damus) so that it would work with LNURL
+        guard strBytes.count <= 2024 else {
             throw DecodingError.stringLengthExceeded
         }
         var lower: Bool = false
