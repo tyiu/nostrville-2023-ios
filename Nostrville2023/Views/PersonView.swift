@@ -20,12 +20,15 @@ struct PersonView: View {
                 .font(.headline)
                 .multilineTextAlignment(.leading)
                 .fixedSize(horizontal: false, vertical: true)
-            Text(person.description)
-                .font(.subheadline)
-                .multilineTextAlignment(.leading)
-                .fixedSize(horizontal: false, vertical: true)
 
-            if let nostrUrl = URL(string: "nostr:\(person.nostrPublicKey)") {
+            if let description = person.description {
+                Text(description)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
+            if person.nostrPublicKey.starts(with: "npub1"), let nostrUrl = URL(string: "nostr:\(person.nostrPublicKey)") {
                 Link("Nostr Profile", destination: nostrUrl)
                     .buttonStyle(.bordered)
                     .contextMenu {
@@ -51,10 +54,12 @@ struct PersonView: View {
                 }
             }
 
-            Image(person.picture)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxWidth: 200, maxHeight: 200)
+            if let picture = person.picture, !picture.isEmpty {
+                Image(picture)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: 200, maxHeight: 200)
+            }
         }
         .padding(10)
         .sheet(isPresented: $showTipSheet, onDismiss: { showTipSheet = false }, content: {

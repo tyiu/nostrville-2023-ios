@@ -12,34 +12,38 @@ struct Person: Identifiable, Hashable {
     var id: String { self.nostrPublicKey }
     let nostrPublicKey: String
     let name: String
-    let description: String
-    let picture: String
+    let description: String?
+    let picture: String?
     let lightningIdentifier: String?
     let lnUrl: String?
 
-    init(nostrPublicKey: String, name: String, description: String, picture: String, lightningIdentifier: String) {
+    init(nostrPublicKey: String, name: String, description: String?, picture: String?, lightningIdentifier: String?) {
         self.nostrPublicKey = nostrPublicKey
         self.name = name
         self.description = description
         self.picture = picture
         self.lightningIdentifier = lightningIdentifier
 
-        if lightningIdentifier.lowercased().hasPrefix("lnurl") {
-            self.lnUrl = lightningIdentifier
-        } else if lightningIdentifier.contains("@") {
-            let parts = lightningIdentifier.split(separator: "@")
-            guard parts.count == 2 else {
-                self.lnUrl = nil
-                return
-            }
+        if let lightningIdentifier {
+            if lightningIdentifier.lowercased().hasPrefix("lnurl") {
+                self.lnUrl = lightningIdentifier
+            } else if lightningIdentifier.contains("@") {
+                let parts = lightningIdentifier.split(separator: "@")
+                guard parts.count == 2 else {
+                    self.lnUrl = nil
+                    return
+                }
 
-            let url = "https://\(parts[1])/.well-known/lnurlp/\(parts[0])"
-            guard let data = url.data(using: .utf8) else {
-                self.lnUrl = nil
-                return
-            }
+                let url = "https://\(parts[1])/.well-known/lnurlp/\(parts[0])"
+                guard let data = url.data(using: .utf8) else {
+                    self.lnUrl = nil
+                    return
+                }
 
-            self.lnUrl = Bech32.encode("lnurl", baseEightData: data)
+                self.lnUrl = Bech32.encode("lnurl", baseEightData: data)
+            } else {
+                self.lnUrl = nil
+            }
         } else {
             self.lnUrl = nil
         }

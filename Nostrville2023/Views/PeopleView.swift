@@ -30,10 +30,12 @@ struct PeopleView: View {
                 if selectedGroupIndex == 0 {
                     ForEach(speakers.sorted { $0.name.lowercased() < $1.name.lowercased() }, id: \.self) { speaker in
                         HStack {
-                            Image(speaker.picture)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(maxWidth: 100, maxHeight: 100)
+                            if let picture = speaker.picture, !picture.isEmpty {
+                                Image(picture)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: 100, maxHeight: 100)
+                            }
                             NavigationLink(destination: PersonView(person: speaker)) {
                                 Text(speaker.name)
                             }.navigationTitle("People")
@@ -42,10 +44,12 @@ struct PeopleView: View {
                 } else {
                     ForEach(organizers.sorted { $0.name.lowercased() < $1.name.lowercased() }, id: \.self) { speaker in
                         HStack {
-                            Image(speaker.picture)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(maxWidth: 100, maxHeight: 100)
+                            if let picture = speaker.picture, !picture.isEmpty {
+                                Image(picture)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: 100, maxHeight: 100)
+                            }
                             NavigationLink(destination: PersonView(person: speaker)) {
                                 Text(speaker.name)
                             }.navigationTitle("People")

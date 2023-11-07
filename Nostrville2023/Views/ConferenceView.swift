@@ -57,84 +57,12 @@ struct ConferenceView_Previews: PreviewProvider {
         organizers: organizers
     )
 
-    static let odell = Person(
-        nostrPublicKey: "npub1qny3tkh0acurzla8x3zy4nhrjz5zd8l9sy9jys09umwng00manysew95gx",
-        name: "ODELL",
-        description: "freedom tech is hope 🫡",
-        picture: "odell",
-        lightningIdentifier: "odell@vlt.ge"
-    )
-
-    static let miljan = Person(
-        nostrPublicKey: "npub16c0nh3dnadzqpm76uctf5hqhe2lny344zsmpm6feee9p5rdxaa9q586nvr",
-        name: "miljan",
-        description: "CEO of Primal. Building apps and services for Nostr.",
-        picture: "miljan",
-        lightningIdentifier: "miljan@primal.net"
-    )
-
-    static let tyiu = Person(
-        nostrPublicKey: "npub1yaul8k059377u9lsu67de7y637w4jtgeuwcmh5n7788l6xnlnrgs3tvjmf",
-        name: "Terry Yiu",
-        description: "Founder @ Confstr\nContributor @ Damus\nEngineer @ Cash App",
-        picture: "tyiu",
-        lightningIdentifier: "tyiu@tyiu.xyz"
-    )
-
-    static let tony = Person(
-        nostrPublicKey: "npub1t0nyg64g5vwprva52wlcmt7fkdr07v5dr7s35raq9g0xgc0k4xcsedjgqv",
-        name: "Tony",
-        description: "Building Mutiny Wallet",
-        picture: "tony",
-        lightningIdentifier: "TonyGiorgio@stacker.news"
-    )
-
-    static let rod = Person(
-        nostrPublicKey: "npub1atn7mlwt08erz4ap47gef92xfey65a4z9ed9vec53u5kc9v94pusl6h4x3",
-        name: "Rod",
-        description: "Nostrville 2023 🧡",
-        picture: "rod",
-        lightningIdentifier: "bitkite@getalby.com"
-    )
-
-    static let rockstar = Person(
-        nostrPublicKey: "npub1j8y6tcdfw3q3f3h794s6un0gyc5742s0k5h5s2yqj0r70cpklqeqjavrvg",
-        name: "Uncle Rockstar",
-        description: "#Bitcoin Uncle. Core contributor @BtcPayServer. Philosopher, Cypherpunk, Unifier. Short Twitter (and other BS), Long Nostr!",
-        picture: "rockstar",
-        lightningIdentifier: "rockstar@snort.social"
-    )
-
-    static let mads = Person(
-        nostrPublicKey: "npub1rpes5hhk6mxun5ddt5kecxfm8y3xdr0h5jwal32mc6mxafr48hxsaj2et2",
-        name: "mads",
-        description: "Running bitcoin & ⚡️",
-        picture: "mads",
-        lightningIdentifier: "mads@getalby.com"
-    )
-
-    static let jb55 = Person(
-        nostrPublicKey: "npub1xtscya34g58tk0z605fvr788k263gsu6cy9x0mhnm87echrgufzsevkk5s",
-        name: "William Casarin",
-        description: "I made damus, npubs and zaps. banned by apple & the ccp. my notes are not for sale.",
-        picture: "jb55",
-        lightningIdentifier: "jb55@jb55.com"
-    )
-
-    static let yegor = Person(
-        nostrPublicKey: "npub1z4m7gkva6yxgvdyclc7zp0vz4ta0s2d9jh8g83w03tp5vdf3kzdsxana6p",
-        name: "yegorpetrov",
-        description: "#Bitcoin 🧡 #nostr  💜",
-        picture: "yegor",
-        lightningIdentifier: "yegorpetrov@getalby.com"
-    )
-
-    static let sersleepy = Person(
-        nostrPublicKey: "npub1jk9h2jsa8hjmtm9qlcca942473gnyhuynz5rmgve0dlu6hpeazxqc3lqz7",
-        name: "Ser Sleepy",
-        description: "A frog of many trades 🐸",
-        picture: "sersleepy",
-        lightningIdentifier: "sersleepy@getalby.com"
+    static let avi = Person(
+        nostrPublicKey: "npub1hqaz3dlyuhfqhktqchawke39l92jj9nt30dsgh2zvd9z7dv3j3gqpkt56s",
+        name: "Avi Burra",
+        description: "Bitcoin Surrealist",
+        picture: "avi",
+        lightningIdentifier: "weirdparsnip79@walletofsatoshi.com"
     )
 
     static let derekross = Person(
@@ -145,6 +73,31 @@ struct ConferenceView_Previews: PreviewProvider {
         lightningIdentifier: "derekross@getalby.com"
     )
 
+    static let doc = Person(
+        nostrPublicKey: "npub1xy54p83r6wnpyhs52xjeztd7qyyeu9ghymz8v66yu8kt3jzx75rqhf3urc",
+        name: "doc",
+        description:
+"""
+"@NostReport | Physician | Bitcoiner | #plebchain  | #docchain
+
+Think about it, do it.
+""",
+        picture: "doc",
+        lightningIdentifier: "0x72078c6c7c3e4026@ln.tips"
+    )
+
+    static let elsat = Person(
+        nostrPublicKey: "npub1zafcms4xya5ap9zr7xxr0jlrtrattwlesytn2s42030lzu0dwlzqpd26k5",
+        name: "elsat",
+        description:
+"""
+Damus and nostr Product Janitor 🧹
+Zaps go to Bitcoin Berlin 🇸🇻 bitcoinberlin@blink.sv
+""",
+        picture: "elsat",
+        lightningIdentifier: "bitcoinberlin@blink.sv"
+    )
+
     static let island = Person(
         nostrPublicKey: "npub1jzuma368395gu523y4vk4d34p0lxgctk436hggn4qcuj93075qgqtn3vm0",
         name: "island",
@@ -153,25 +106,113 @@ struct ConferenceView_Previews: PreviewProvider {
         lightningIdentifier: "island@walletofsatoshi.com"
     )
 
-    static let avi = Person(
-        nostrPublicKey: "npub1hqaz3dlyuhfqhktqchawke39l92jj9nt30dsgh2zvd9z7dv3j3gqpkt56s",
-        name: "Avi Burra",
-        description: "Bitcoin Surrealist",
-        picture: "avi",
-        lightningIdentifier: "weirdparsnip79@walletofsatoshi.com"
+    static let kim = Person(
+        nostrPublicKey: "kim",
+        name: "Kim",
+        description: nil,
+        picture: nil,
+        lightningIdentifier: nil
     )
 
-    static let doc = Person(
-        nostrPublicKey: "npub1xy54p83r6wnpyhs52xjeztd7qyyeu9ghymz8v66yu8kt3jzx75rqhf3urc",
-        name: "doc",
+    static let mads = Person(
+        nostrPublicKey: "npub1rpes5hhk6mxun5ddt5kecxfm8y3xdr0h5jwal32mc6mxafr48hxsaj2et2",
+        name: "mads",
+        description: "Running bitcoin & ⚡️",
+        picture: "mads",
+        lightningIdentifier: "mads@getalby.com"
+    )
+
+    static let marty = Person(nostrPublicKey: "npub1guh5grefa7vkay4ps6udxg8lrqxg2kgr3qh9n4gduxut64nfxq0q9y6hjy", name: "Marty Bent", description: "Founder of TFTC.io, co-host of Rabbit Hole Recap, Partner at Ten31", picture: "marty", lightningIdentifier: "marty@getalby.com")
+
+    static let odell = Person(
+        nostrPublicKey: "npub1qny3tkh0acurzla8x3zy4nhrjz5zd8l9sy9jys09umwng00manysew95gx",
+        name: "ODELL",
+        description: "freedom tech is hope 🫡",
+        picture: "odell",
+        lightningIdentifier: "odell@vlt.ge"
+    )
+
+    static let preston = Person(
+        nostrPublicKey: "npub1s5yq6wadwrxde4lhfs56gn64hwzuhnfa6r9mj476r5s4hkunzgzqrs6q7z",
+        name: "preston",
+        description: "Bitcoin & books. My bitcoin can remain in cold storage far longer than the market can remain irrational. @PrestonPysh on Twitter.",
+        picture: "preston",
+        lightningIdentifier: "prestonpysh@getalby.com"
+    )
+
+    static let prettyGood = Person(
+        nostrPublicKey: "prettygood",
+        name: "pretty good",
+        description: nil,
+        picture: nil,
+        lightningIdentifier: nil
+    )
+
+    static let quietWarrior = Person(
+        nostrPublicKey: "npub1tvqc82mv8cezhax5r34n4muc2c4pgjz8kaye2smj032nngg52clq0rkrq4",
+        name: "QW",
         description:
 """
-        "@NostReport | Physician | Bitcoiner | #plebchain  | #docchain
-
-        Think about it, do it.
+Co-Host Plebchain Radio
+#Plebchain #Zapathon
 """,
-        picture: "doc",
-        lightningIdentifier: "0x72078c6c7c3e4026@ln.tips"
+        picture: "quietwarrior",
+        lightningIdentifier: "QW@WalletOfSatoshi.com"
+    )
+
+    static let rockstar = Person(
+        nostrPublicKey: "npub1j8y6tcdfw3q3f3h794s6un0gyc5742s0k5h5s2yqj0r70cpklqeqjavrvg",
+        name: "Uncle Rockstar",
+        description: "#Bitcoin Uncle. Core contributor @BtcPayServer. Philosopher, Cypherpunk, Unifier. Short Twitter (and other BS), Long Nostr!",
+        picture: "rockstar",
+        lightningIdentifier: "rockstar@snort.social"
+    )
+
+    static let rod = Person(
+        nostrPublicKey: "npub1atn7mlwt08erz4ap47gef92xfey65a4z9ed9vec53u5kc9v94pusl6h4x3",
+        name: "Rod",
+        description: "Nostrville 2023 🧡",
+        picture: "rod",
+        lightningIdentifier: "bitkite@getalby.com"
+    )
+
+    static let roya = Person(
+        nostrPublicKey: "npub1csamkk8zu67zl9z4wkp90a462v53q775aqn5q6xzjdkxnkvcpd7srtz4x9",
+        name: "roya",
+        description: "",
+        picture: "roya",
+        lightningIdentifier: "roya@getalby.com"
+    )
+
+    static let sersleepy = Person(
+        nostrPublicKey: "npub1jk9h2jsa8hjmtm9qlcca942473gnyhuynz5rmgve0dlu6hpeazxqc3lqz7",
+        name: "Ser Sleepy",
+        description: "A frog of many trades 🐸",
+        picture: "sersleepy",
+        lightningIdentifier: "sersleepy@getalby.com"
+    )
+
+    static let seth = Person(
+        nostrPublicKey: "npub15u3cqhx6vuj3rywg0ph5mfv009lxja6cyvqn2jagaydukq6zmjwqex05rq",
+        name: "Seth",
+        description:
+"""
+Nostr & Bitcoin
+
+https://nostr.cooking
+
+https://nostrlobby.com
+""",
+        picture: "seth",
+        lightningIdentifier: "LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHKCMMWV4K8JETJVYCRGZDTUUE"
+    )
+
+    static let susie = Person(
+        nostrPublicKey: "npub1jt0x3vsnqtazzda3ewa8ykdch2t8k566qhrd9vyy0k0ntleu744q8h6q3n",
+        name: "Susiebdds",
+        description: "The artist formerly known as Beefybush79@walletofsatoshi.com",
+        picture: "susie",
+        lightningIdentifier: "beefybush69@walletofsatoshi.com"
     )
 
     static let tatum = Person(
@@ -191,56 +232,36 @@ Nostr class of Dec ‘22
         lightningIdentifier: "tatumturnup@walletofsatoshi.com"
     )
 
-    static let roya = Person(
-        nostrPublicKey: "npub1csamkk8zu67zl9z4wkp90a462v53q775aqn5q6xzjdkxnkvcpd7srtz4x9",
-        name: "roya",
-        description: "",
-        picture: "roya",
-        lightningIdentifier: "roya@getalby.com"
+    static let tony = Person(
+        nostrPublicKey: "npub1t0nyg64g5vwprva52wlcmt7fkdr07v5dr7s35raq9g0xgc0k4xcsedjgqv",
+        name: "Tony",
+        description: "Building Mutiny Wallet",
+        picture: "tony",
+        lightningIdentifier: "TonyGiorgio@stacker.news"
     )
 
-    static let vanessa = Person(
-        nostrPublicKey: "npub1h50pnxqw9jg7dhr906fvy4mze2yzawf895jhnc3p7qmljdugm6gsrurqev",
-        name: "Vanessa",
-        description: "Marketer, mom, living at @damus headquarters",
-        picture: "vanessa",
-        lightningIdentifier: "vanessagray31@getalby.com"
+    static let tyiu = Person(
+        nostrPublicKey: "npub1yaul8k059377u9lsu67de7y637w4jtgeuwcmh5n7788l6xnlnrgs3tvjmf",
+        name: "Terry Yiu",
+        description: "Founder @ Confstr\nContributor @ Damus\nEngineer @ Cash App",
+        picture: "tyiu",
+        lightningIdentifier: "tyiu@tyiu.xyz"
     )
 
-    static let susie = Person(
-        nostrPublicKey: "npub1jt0x3vsnqtazzda3ewa8ykdch2t8k566qhrd9vyy0k0ntleu744q8h6q3n",
-        name: "Susiebdds",
-        description: "The artist formerly known as Beefybush79@walletofsatoshi.com",
-        picture: "susie",
-        lightningIdentifier: "beefybush69@walletofsatoshi.com"
+    static let yegor = Person(
+        nostrPublicKey: "npub1z4m7gkva6yxgvdyclc7zp0vz4ta0s2d9jh8g83w03tp5vdf3kzdsxana6p",
+        name: "yegorpetrov",
+        description: "#Bitcoin 🧡 #nostr  💜",
+        picture: "yegor",
+        lightningIdentifier: "yegorpetrov@getalby.com"
     )
 
-    static let preston = Person(
-        nostrPublicKey: "npub1s5yq6wadwrxde4lhfs56gn64hwzuhnfa6r9mj476r5s4hkunzgzqrs6q7z",
-        name: "preston",
-        description: "Bitcoin & books. My bitcoin can remain in cold storage far longer than the market can remain irrational. @PrestonPysh on Twitter.",
-        picture: "preston",
-        lightningIdentifier: "prestonpysh@getalby.com"
-    )
-
-    static let corndalorian = Person(
-        nostrPublicKey: "npub1lrnvvs6z78s9yjqxxr38uyqkmn34lsaxznnqgd877j4z2qej3j5s09qnw5",
-        name: "corndalorian",
-        description: "bitcoin. memes. music. nostr report. 💜",
-        picture: "corndalorian",
-        lightningIdentifier: "corn@walletofsatoshi.com"
-    )
-
-    static let quietWarrior = Person(
-        nostrPublicKey: "npub1tvqc82mv8cezhax5r34n4muc2c4pgjz8kaye2smj032nngg52clq0rkrq4",
-        name: "QW",
-        description:
-"""
-        Co-Host Plebchain Radio
-        #Plebchain #Zapathon
-""",
-        picture: "quietwarrior",
-        lightningIdentifier: "QW@WalletOfSatoshi.com"
+    static let zach = Person(
+        nostrPublicKey: "npub1zach44xjpc4yyhx6pgse2cj2pf98838kja03dv2e8ly8lfr094vqvm5dy5",
+        name: "Zach Meyer",
+        description: "Writing code and stacking sats for fun and profit 🦤",
+        picture: "zach",
+        lightningIdentifier: "polishedsun243004@getalby.com"
     )
 
     static let sessionWelcomeAndGoals = Session(
@@ -249,7 +270,8 @@ Nostr class of Dec ‘22
         speakers: [
             rod,
             rockstar,
-            mads
+            mads,
+            yegor
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T10:00:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T10:15:00-06:00")!,
@@ -277,33 +299,29 @@ Plenary
 """
     )
 
-    static let sessionKeynoteWill = Session(
-        id: "keynote-will",
-        name: "Keynote - Will",
+    static let sessionKeynote = Session(
+        id: "keynote",
+        name: "Keynote",
         speakers: [
-            jb55
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T12:00:00-06:00")!,
-        stage: "Event Space",
+        stage: "",
         description:
 """
-Everyone - Event Space
+Plenary
 """
     )
 
     static let sessionLunch = Session(
         id: "lunch",
-        name: "Lunch - Chivanada Food Truck (empanadas)",
-        speakers: [
-
-        ],
+        name: "Lunch",
+        speakers: [],
         startTime: isoDateFormatter.date(from: "2023-11-09T12:00:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T13:30:00-06:00")!,
-        stage: "",
+        stage: "Pop-Up at Park + Hillsboro Village",
         description:
 """
-Meal
 """
     )
 
@@ -326,13 +344,12 @@ Panel
 """
     )
 
-    static let session10MinutePresentations = Session(
-        id: "10-minute-presentations",
+    static let session10MinutePresentations1 = Session(
+        id: "10-minute-presentations-1",
         name: "10 minute presentations",
         speakers: [
-            avi,
-            doc,
             derekross,
+            doc,
             tony,
             tyiu
         ],
@@ -342,6 +359,11 @@ Panel
         description:
 """
 4 - 10 minute with 5 minute Q&A
+
+Derek - Nostr Nests
+Doc - NostrReport
+Tony - Mutiny
+Terry Yiu - Confstr
 """
     )
 
@@ -356,7 +378,7 @@ Panel
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T15:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T16:30:00-06:00")!,
-        stage: "Event Space",
+        stage: "Breakout A - Event Space",
         description:
 """
 Breakout A - Event Space
@@ -368,13 +390,12 @@ Breakout A - Event Space
         name: "NIPS Roundtable",
         speakers: [
             rockstar,
-            miljan,
-            jb55,
+            elsat,
             tyiu
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T15:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T16:30:00-06:00")!,
-        stage: "VIP Space",
+        stage: "Breakout B - VIP Space",
         description:
 """
 Breakout B - VIP Space
@@ -399,6 +420,8 @@ Breakout B - VIP Space
         id: "live-rabbit-hole-recap-happy-hour",
         name: "Live Rabbit Hole Recap + Happy Hour",
         speakers: [
+            odell,
+            marty
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T16:45:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T18:00:00-06:00")!,
@@ -411,12 +434,12 @@ Networking
 
     static let sessionDinner = Session(
         id: "dinner",
-        name: "Dinner - Chivanada Food Truck (empanadas)",
+        name: "Dinner",
         speakers: [
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T18:00:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T20:00:00-06:00")!,
-        stage: "",
+        stage: "TBD",
         description:
 """
 """
@@ -456,7 +479,7 @@ Networking
         speakers: [
             mads,
             roya,
-            vanessa,
+            kim,
             susie
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
@@ -472,8 +495,6 @@ Networking
         name: "Why Nostr",
         speakers: [
             preston,
-            jb55,
-            miljan,
             odell
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:45:00-06:00")!,
@@ -484,33 +505,54 @@ Networking
 """
     )
 
+    static let session10MinutePresentations2 = Session(
+        id: "10-minute-presentations-2",
+        name: "10 minute presentations",
+        speakers: [
+            zach,
+            seth,
+            prettyGood,
+            kim
+        ],
+        startTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
+        stage: "Event Space",
+        description:
+"""
+4 - 10 minute with 5 minute Q&A
+
+Zach - Flockstr
+Seth - nostr.cooking
+Pretty Good
+Kim - Voltage
+"""
+    )
+
     static let sessionDamusBreakout = Session(
         id: "damus-breakout",
         name: "Damus Breakout",
         speakers: [
-            jb55
+            elsat
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
-        stage: "VIP Space",
+        stage: "Breakout C - Mezz",
         description:
 """
-Breakout B - VIP Space
 """
     )
 
-    static let sessionPrimalBreakout = Session(
-        id: "primal-breakout",
-        name: "Primal Breakout",
+    static let sessionNostrasia = Session(
+        id: "nostrasia",
+        name: "Nostrasia",
         speakers: [
-            miljan
+            rockstar
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
-        stage: "Mezz",
+        stage: "Breakout B - VIP Space",
         description:
 """
-Breakout C - Mezz
 """
     )
 
@@ -519,7 +561,7 @@ Breakout C - Mezz
         name: "Closing Keynote",
         speakers: [
             avi,
-            corndalorian,
+            doc,
             quietWarrior
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
@@ -534,10 +576,10 @@ Nostr Nests - Plebchain Radio
     static let sessions = [
         sessionWelcomeAndGoals,
         session15SecIntros,
-        sessionKeynoteWill,
+        sessionKeynote,
         sessionLunch,
         sessionPlebs,
-        session10MinutePresentations,
+        session10MinutePresentations1,
         sessionOnboardingPeopleOnToNostr,
         sessionNipsRoundtable,
         sessionClosingKeynote1,
@@ -547,8 +589,9 @@ Nostr Nests - Plebchain Radio
         sessionWelcome2,
         sessionNipsIrl,
         sessionWhyNostr,
+        session10MinutePresentations2,
+        sessionNostrasia,
         sessionDamusBreakout,
-        sessionPrimalBreakout,
         sessionClosingKeynote2
     ]
 
