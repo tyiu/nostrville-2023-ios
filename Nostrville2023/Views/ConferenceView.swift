@@ -162,6 +162,14 @@ First Principle: If Your Life Is A Mess, Bitcoin Will Not Fix This
         lightningIdentifier: "dontgrowweary@vlt.ge"
     )
 
+    static let josh = Person(
+        nostrPublicKey: "npub1jv6j6dpum7dgrdn8jm5gqnt5vv3g4eqfj55etgxsaa56dnkp3smq67g7he",
+        name: "JoshBitcoinPark",
+        description: "Community & Ops | Bitcoin Park",
+        picture: "josh",
+        lightningIdentifier: nil
+    )
+
     static let mads = Person(
         nostrPublicKey: "npub1rpes5hhk6mxun5ddt5kecxfm8y3xdr0h5jwal32mc6mxafr48hxsaj2et2",
         name: "mads",
@@ -277,21 +285,12 @@ https://nostrlobby.com
         lightningIdentifier: "beefybush69@walletofsatoshi.com"
     )
 
-    static let tatum = Person(
-        nostrPublicKey: "npub1hte85nxymfyez0nlmmxf287nh9cujfuetxhk9vptwcdqg0pn8pxqxasw3d",
-        name: "TatumTurnUp",
-        description:
-"""
-Host of Between Two ASICs
-
-Bought pizza, wine, and S9s using Bitcoin on Nostr
-
-I like talking about Bitcoin Mining
-
-Nostr class of Dec ‘22
-""",
-        picture: "tatum",
-        lightningIdentifier: "tatumturnup@walletofsatoshi.com"
+    static let timot = Person(
+        nostrPublicKey: "npub1x8gwn5x96xwsedtde630p5yp4hwq5l6rqhvzutsnx3clle92vdks8rtv28",
+        name: "Timot",
+        description: nil,
+        picture: "timot",
+        lightningIdentifier: "boldrain193@getalby.com"
     )
 
     static let tony = Person(
@@ -441,7 +440,7 @@ Terry Yiu - Confstr
         id: "onboarding-people-on-to-nostr",
         name: "Onboarding People on to Nostr",
         speakers: [
-            tatum,
+            roya,
             island,
             doc,
             odell
@@ -549,7 +548,6 @@ Networking
         speakers: [
             mads,
             roya,
-            dontGrowWeary,
             susie
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
@@ -678,8 +676,10 @@ Nostr Nests - Plebchain Radio
         frankee,
         getOffZero,
         gratten,
+        josh,
         mjgbtc,
         smash,
+        timot,
         tyiu
     ]
 
