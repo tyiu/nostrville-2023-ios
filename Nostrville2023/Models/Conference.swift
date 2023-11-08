@@ -15,4 +15,5 @@ struct Conference: Hashable {
     let timeZone: TimeZone
     let sessions: [Session]
     let organizers: [Person]
+    let volunteers: [Person]
 }

@@ -33,7 +33,8 @@ struct ConferenceView: View {
 
             PeopleView(
                 speakers: Array(Set(conference.sessions.flatMap { $0.speakers })),
-                organizers: conference.organizers
+                organizers: conference.organizers,
+                volunteers: conference.volunteers
             )
             .tabItem {
                 Label("People", systemImage: "person")
@@ -54,7 +55,8 @@ struct ConferenceView_Previews: PreviewProvider {
         location: "Nashville, Tennessee",
         timeZone: TimeZone(identifier: "America/Indiana/Tell_City") ?? TimeZone.current,
         sessions: sessions,
-        organizers: organizers
+        organizers: organizers,
+        volunteers: volunteers
     )
 
     static let avi = Person(
@@ -113,6 +115,37 @@ Zaps go to Bitcoin Berlin 🇸🇻 bitcoinberlin@blink.sv
         lightningIdentifier: "bitcoinberlin@blink.sv"
     )
 
+    static let frankee = Person(
+        nostrPublicKey: "npub16ama28wlhl5rsl8l9eqr8tgarmjg638hxnqgv6q7cte4z7ru5j7qt60tmx",
+        name: "frankee.hodl",
+        description: nil,
+        picture: "frankee",
+        lightningIdentifier: "obtusenut96@walletofsatoshi.com"
+    )
+
+    static let getOffZero = Person(
+        nostrPublicKey: "npub1hvqyjkwaprl5k28csax7g8c20xsyw0nqnavwmlkz956h986dx9ashagyq6",
+        name: "GetOffZero",
+        description:
+"""
+Romans 1:16 & BTC Believer | Bitcoin Class of 2017
+
+Bitcoin is the life raft but you have to get in—Get Off Zero
+
+First Principle: If Your Life Is A Mess, Bitcoin Will Not Fix This
+""",
+        picture: "getOffZero",
+        lightningIdentifier: "shyangle36@walletofsatoshi.com"
+    )
+
+    static let gratten = Person(
+        nostrPublicKey: "npub1s9yysustct27xeah0v0kvdalwrqx7e8x8vw2xa2ph7mt2mep3rfqpupwct",
+        name: "Gratten",
+        description: "Bitcoin enthusiast and tinkerer",
+        picture: "gratten",
+        lightningIdentifier: "gratten@gratten.duckdns.org"
+    )
+
     static let island = Person(
         nostrPublicKey: "npub1jzuma368395gu523y4vk4d34p0lxgctk436hggn4qcuj93075qgqtn3vm0",
         name: "island",
@@ -121,12 +154,12 @@ Zaps go to Bitcoin Berlin 🇸🇻 bitcoinberlin@blink.sv
         lightningIdentifier: "island@walletofsatoshi.com"
     )
 
-    static let kim = Person(
-        nostrPublicKey: "kim",
-        name: "Kim",
-        description: nil,
-        picture: nil,
-        lightningIdentifier: nil
+    static let dontGrowWeary = Person(
+        nostrPublicKey: "npub1jv6j6dpum7dgrdn8jm5gqnt5vv3g4eqfj55etgxsaa56dnkp3smq67g7he",
+        name: "Don't Grow Weary",
+        description: "Jesus | Bitcoin | Beef | Ops at Voltage",
+        picture: "dontGrowWeary",
+        lightningIdentifier: "dontgrowweary@vlt.ge"
     )
 
     static let mads = Person(
@@ -137,7 +170,21 @@ Zaps go to Bitcoin Berlin 🇸🇻 bitcoinberlin@blink.sv
         lightningIdentifier: "mads@getalby.com"
     )
 
-    static let marty = Person(nostrPublicKey: "npub1guh5grefa7vkay4ps6udxg8lrqxg2kgr3qh9n4gduxut64nfxq0q9y6hjy", name: "Marty Bent", description: "Founder of TFTC.io, co-host of Rabbit Hole Recap, Partner at Ten31", picture: "marty", lightningIdentifier: "marty@getalby.com")
+    static let marty = Person(
+        nostrPublicKey: "npub1guh5grefa7vkay4ps6udxg8lrqxg2kgr3qh9n4gduxut64nfxq0q9y6hjy",
+        name: "Marty Bent",
+        description: "Founder of TFTC.io, co-host of Rabbit Hole Recap, Partner at Ten31",
+        picture: "marty",
+        lightningIdentifier: "marty@getalby.com"
+    )
+
+    static let mjgbtc = Person(
+        nostrPublicKey: "npub17tzr4dh0y66yj9g7flmf74uerwfp4wwhf86xcl328e65l3v504dqsy90sg",
+        name: "MJGBTC",
+        description: nil,
+        picture: "mjgbtc",
+        lightningIdentifier: "dawnriver630504@getalby.com"
+    )
 
     static let odell = Person(
         nostrPublicKey: "npub1qny3tkh0acurzla8x3zy4nhrjz5zd8l9sy9jys09umwng00manysew95gx",
@@ -214,6 +261,14 @@ https://nostrlobby.com
         lightningIdentifier: "LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHKCMMWV4K8JETJVYCRGZDTUUE"
     )
 
+    static let smash = Person(
+        nostrPublicKey: "npub1c9y08cwk9wfgsks34zvdmy8awpzgrg5razl77h49n0p0jkp7jpfqln988d",
+        name: "Smash",
+        description: nil,
+        picture: "smash",
+        lightningIdentifier: "lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhhxmtpwf6x2unrdpskucm9xvcsqrl8pz"
+    )
+
     static let susie = Person(
         nostrPublicKey: "npub1jt0x3vsnqtazzda3ewa8ykdch2t8k566qhrd9vyy0k0ntleu744q8h6q3n",
         name: "Susiebdds",
@@ -255,10 +310,18 @@ Nostr class of Dec ‘22
         lightningIdentifier: "tyiu@tyiu.xyz"
     )
 
+    static let w3irdrobot = Person(
+        nostrPublicKey: "npub17q5n2z8naw0xl6vu9lvt560lg33pdpe29k0k09umlfxm3vc4tqrq466f2y",
+        name: "W3irdrobot",
+        description: "send nodes",
+        picture: "w3irdrobot",
+        lightningIdentifier: "w3irdrobot@vlt.ge"
+    )
+
     static let yegor = Person(
         nostrPublicKey: "npub1z4m7gkva6yxgvdyclc7zp0vz4ta0s2d9jh8g83w03tp5vdf3kzdsxana6p",
         name: "yegorpetrov",
-        description: "#Bitcoin 🧡 #nostr  💜",
+        description: "#Bitcoin 🧡 #nostr 💜",
         picture: "yegor",
         lightningIdentifier: "yegorpetrov@getalby.com"
     )
@@ -313,10 +376,10 @@ Plenary
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T12:00:00-06:00")!,
-        stage: "",
+        stage: "Event Space",
         description:
 """
-Plenary
+Everyone - Event Space
 """
     )
 
@@ -486,7 +549,7 @@ Networking
         speakers: [
             mads,
             roya,
-            kim,
+            dontGrowWeary,
             susie
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
@@ -519,7 +582,8 @@ Networking
             zach,
             seth,
             david,
-            kim
+            dontGrowWeary,
+            w3irdrobot
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
@@ -530,8 +594,8 @@ Networking
 
 Zach - Flockstr
 Seth - nostr.cooking
-Pretty Good
-Kim - Voltage
+David Strayhorn - Pretty Good
+Don't Grow Weary, w3irdrobot - Voltage
 """
     )
 
@@ -606,7 +670,17 @@ Nostr Nests - Plebchain Radio
         rod,
         odell,
         mads,
-        island
+        island,
+        yegor
+    ]
+
+    static let volunteers = [
+        frankee,
+        getOffZero,
+        gratten,
+        mjgbtc,
+        smash,
+        tyiu
     ]
 
     static var previews: some View {
