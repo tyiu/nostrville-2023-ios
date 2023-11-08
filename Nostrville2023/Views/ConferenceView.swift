@@ -167,7 +167,7 @@ First Principle: If Your Life Is A Mess, Bitcoin Will Not Fix This
         name: "JoshBitcoinPark",
         description: "Community & Ops | Bitcoin Park",
         picture: "josh",
-        lightningIdentifier: nil
+        lightningIdentifier: "talentsminas@getalby.com"
     )
 
     static let mads = Person(
