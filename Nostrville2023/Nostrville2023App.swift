@@ -18,6 +18,11 @@ struct Nostrville2023App: App {
                 .navigationTitle("Nostrville 2023")
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
+                        NavigationLink(destination: HelpView()) {
+                            Image(systemName: "questionmark.circle")
+                        }
+                    }
+                    ToolbarItem(placement: .primaryAction) {
                         NavigationLink(destination: InfoView()) {
                             Image(systemName: "info.circle")
                         }

@@ -30,6 +30,9 @@
 		3A55647B2AF73F99000674E6 /* Data+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55647A2AF73F99000674E6 /* Data+Encoding.swift */; };
 		3A55647E2AF75E11000674E6 /* String+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A55647D2AF75E11000674E6 /* String+Hex.swift */; };
 		3A5564832AF76D6D000674E6 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564822AF76D6D000674E6 /* TipView.swift */; };
+		3A900B442AFC241400FC6657 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A900B432AFC241400FC6657 /* HelpView.swift */; };
+		3A900B462AFC39E900FC6657 /* NostrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A900B452AFC39E900FC6657 /* NostrClient.swift */; };
+		3A900B482AFC3D6D00FC6657 /* TryNostrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A900B472AFC3D6D00FC6657 /* TryNostrView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		3A55647A2AF73F99000674E6 /* Data+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Encoding.swift"; sourceTree = "<group>"; };
 		3A55647D2AF75E11000674E6 /* String+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hex.swift"; sourceTree = "<group>"; };
 		3A5564822AF76D6D000674E6 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		3A900B432AFC241400FC6657 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		3A900B452AFC39E900FC6657 /* NostrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostrClient.swift; sourceTree = "<group>"; };
+		3A900B472AFC3D6D00FC6657 /* TryNostrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryNostrView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +173,11 @@
 			isa = PBXGroup;
 			children = (
 				3A453E182A0C613600897303 /* Conference.swift */,
+				3A5564782AF727F6000674E6 /* LNUrlPay.swift */,
 				3A453E172A0C613500897303 /* Person.swift */,
 				3A453E192A0C613600897303 /* Session.swift */,
 				3A5564702AF6D57C000674E6 /* Wallet.swift */,
-				3A5564782AF727F6000674E6 /* LNUrlPay.swift */,
+				3A900B452AFC39E900FC6657 /* NostrClient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,13 +187,15 @@
 			children = (
 				3A453E232A0C614900897303 /* ConferenceView.swift */,
 				3A453E222A0C614900897303 /* DayView.swift */,
+				3A900B432AFC241400FC6657 /* HelpView.swift */,
+				3A55646C2AF6B4D1000674E6 /* InfoView.swift */,
 				3A453E202A0C614900897303 /* PeopleView.swift */,
 				3A453E212A0C614900897303 /* PersonView.swift */,
 				3A453E1E2A0C614800897303 /* ScheduleView.swift */,
 				3A453E1D2A0C614800897303 /* SessionView.swift */,
-				3A55646C2AF6B4D1000674E6 /* InfoView.swift */,
 				3A55646E2AF6B4DD000674E6 /* SettingsView.swift */,
 				3A5564822AF76D6D000674E6 /* TipView.swift */,
+				3A900B472AFC3D6D00FC6657 /* TryNostrView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,8 +377,11 @@
 				3A55646D2AF6B4D1000674E6 /* InfoView.swift in Sources */,
 				3A5564772AF70501000674E6 /* Bech32.swift in Sources */,
 				3A453E1A2A0C613600897303 /* Person.swift in Sources */,
+				3A900B482AFC3D6D00FC6657 /* TryNostrView.swift in Sources */,
 				3A453E252A0C614900897303 /* ScheduleView.swift in Sources */,
+				3A900B442AFC241400FC6657 /* HelpView.swift in Sources */,
 				3A55647B2AF73F99000674E6 /* Data+Encoding.swift in Sources */,
+				3A900B462AFC39E900FC6657 /* NostrClient.swift in Sources */,
 				3A453E2A2A0C614900897303 /* ConferenceView.swift in Sources */,
 				3A5564832AF76D6D000674E6 /* TipView.swift in Sources */,
 				3A453E282A0C614900897303 /* PersonView.swift in Sources */,
