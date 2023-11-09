@@ -194,6 +194,20 @@ First Principle: If Your Life Is A Mess, Bitcoin Will Not Fix This
         lightningIdentifier: "mads@getalby.com"
     )
 
+    static let mallory = Person(
+        nostrPublicKey: "npub17x7htjej3hgcqwqj86u9yvpcunhw6nz4zclzph2zfnlwe4v0yp8qrxvgap",
+        name: "Mallory",
+        description:
+"""
+Previously the Awesome Opossum
+Co-host of Women’s Wine Night on NostrNests
+Co-founder of the Hippo Appreciation Club
+Pointed out the penis butter typo
+""",
+        picture: "mallory",
+        lightningIdentifier: "fretfulgoose32@walletofsatoshi.com"
+    )
+
     static let marty = Person(
         nostrPublicKey: "npub1guh5grefa7vkay4ps6udxg8lrqxg2kgr3qh9n4gduxut64nfxq0q9y6hjy",
         name: "Marty Bent",
@@ -301,14 +315,6 @@ https://nostrlobby.com
         lightningIdentifier: "lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhhxmtpwf6x2unrdpskucm9xvcsqrl8pz"
     )
 
-    static let susie = Person(
-        nostrPublicKey: "npub1jt0x3vsnqtazzda3ewa8ykdch2t8k566qhrd9vyy0k0ntleu744q8h6q3n",
-        name: "Susiebdds",
-        description: "The artist formerly known as Beefybush79@walletofsatoshi.com",
-        picture: "susie",
-        lightningIdentifier: "beefybush69@walletofsatoshi.com"
-    )
-
     static let timot = Person(
         nostrPublicKey: "npub1x8gwn5x96xwsedtde630p5yp4hwq5l6rqhvzutsnx3clle92vdks8rtv28",
         name: "Timot",
@@ -381,7 +387,8 @@ Plenary
         speakers: [
             rod,
             rockstar,
-            mads
+            mads,
+            yegor
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T10:15:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T11:30:00-06:00")!,
@@ -608,7 +615,7 @@ Networking
         speakers: [
             mads,
             roya,
-            susie
+            mallory
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T10:45:00-06:00")!,
