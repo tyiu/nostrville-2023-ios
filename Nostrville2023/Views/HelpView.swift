@@ -10,7 +10,7 @@ import SwiftUI
 struct HelpView: View {
     var body: some View {
         ScrollView {
-            Text("Nostr is a simple, open protocol that enables global, decentralized, and censorship-resistant social media.")
+            Text("Nostr is a simple, open protocol that enables truly censorship-resistant and global value-for-value publishing on the web.")
                 .padding(.bottom, 20)
 
             NavigationLink(destination: TryNostrView()) {

@@ -59,12 +59,28 @@ struct ConferenceView_Previews: PreviewProvider {
         volunteers: volunteers
     )
 
+    static let abbot = Person(
+        nostrPublicKey: "npub1agq3p0xznd07eactnzv2lur7nd62uaj0vuar328et3u0kzjprzxqxcqvrk",
+        name: "Abbot",
+        description: "Helper Bot @atlbitlab. Est. block 797812.",
+        picture: "abbot",
+        lightningIdentifier: "atlbitlabbot@getalby.com"
+    )
+
     static let avi = Person(
         nostrPublicKey: "npub1hqaz3dlyuhfqhktqchawke39l92jj9nt30dsgh2zvd9z7dv3j3gqpkt56s",
         name: "Avi Burra",
         description: "Bitcoin Surrealist",
         picture: "avi",
         lightningIdentifier: "weirdparsnip79@walletofsatoshi.com"
+    )
+
+    static let ck = Person(
+        nostrPublicKey: "npub1cf3zeytdnwgwzz5pk2ax0vvmmlzad03xcft4d50ejrfhsh8pxcdsefx7gk",
+        name: "ck",
+        description: "Home cooking + Bitcoin.",
+        picture: "ck",
+        lightningIdentifier: "lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhhqmrpdehx2erzd9e8g6pj8qf5vrp0"
     )
 
     static let david = Person(
@@ -222,6 +238,14 @@ Co-Host Plebchain Radio
         lightningIdentifier: "QW@WalletOfSatoshi.com"
     )
 
+    static let rjk = Person(
+        nostrPublicKey: "npub1snpgvt8z7dzlsqw797g2pz6reg3zrrgv643zuyz8adp984d2j4rqvuume8",
+        name: "rjk",
+        description: nil,
+        picture: "rjk",
+        lightningIdentifier: "rkuester@strike.me"
+    )
+
     static let rockstar = Person(
         nostrPublicKey: "npub1j8y6tcdfw3q3f3h794s6un0gyc5742s0k5h5s2yqj0r70cpklqeqjavrvg",
         name: "Uncle Rockstar",
@@ -368,17 +392,18 @@ Plenary
 """
     )
 
-    static let sessionKeynote = Session(
-        id: "keynote",
-        name: "Keynote",
+    static let sessionWhatIsNostr = Session(
+        id: "what-is-nostr",
+        name: "What is Nostr?",
         speakers: [
+            rjk,
+            derekross
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T12:00:00-06:00")!,
-        stage: "Event Space",
+        stage: "Everyone - Event Space",
         description:
 """
-Everyone - Event Space
 """
     )
 
@@ -391,6 +416,7 @@ Everyone - Event Space
         stage: "Pop-Up at Park + Hillsboro Village",
         description:
 """
+Chivanada Food Truck Onsite - Accepts Bitcoin
 """
     )
 
@@ -417,7 +443,7 @@ Panel
         id: "10-minute-presentations-1",
         name: "10 minute presentations",
         speakers: [
-            derekross,
+            avi,
             doc,
             tony,
             tyiu
@@ -429,7 +455,7 @@ Panel
 """
 4 - 10 minute with 5 minute Q&A
 
-Derek - Nostr Nests
+Avi - NIP 21Media
 Doc - NostrReport
 Tony - Mutiny
 Terry Yiu - Confstr
@@ -450,7 +476,6 @@ Terry Yiu - Confstr
         stage: "Breakout A - Event Space",
         description:
 """
-Breakout A - Event Space
 """
     )
 
@@ -460,25 +485,59 @@ Breakout A - Event Space
         speakers: [
             rockstar,
             elsat,
-            tyiu
+            tyiu,
+            tony
         ],
         startTime: isoDateFormatter.date(from: "2023-11-09T15:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-09T16:30:00-06:00")!,
         stage: "Breakout B - VIP Space",
         description:
 """
-Breakout B - VIP Space
 """
     )
 
-    static let sessionClosingKeynote1 = Session(
-        id: "closing-keynote-1",
-        name: "Closing Keynote",
+    static let sessionHrf = Session(
+        id: "hrf",
+        name: "HRF",
+        speakers: [
+            ck
+        ],
+        startTime: isoDateFormatter.date(from: "2023-11-09T16:35:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-09T16:40:00-06:00")!,
+        stage: "Everyone - Event Space",
+        description:
+"""
+Everyone - Event Space
+"""
+    )
+
+    static let session10MinutePresentations2 = Session(
+        id: "10-minute-presentations-2",
+        name: "10 minute presentations",
+        speakers: [
+            derekross,
+            zach
+        ],
+        startTime: isoDateFormatter.date(from: "2023-11-09T16:40:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-09T17:10:00-06:00")!,
+        stage: "",
+        description:
+"""
+2 - 10 minute with 5 minute Q&A
+
+Derek - Nostr Nests
+Zach - Flockstr
+"""
+    )
+
+    static let sessionClosingRemarks = Session(
+        id: "closing-remarks",
+        name: "Closing Remarks",
         speakers: [
             rockstar
         ],
-        startTime: isoDateFormatter.date(from: "2023-11-09T16:30:00-06:00")!,
-        endTime: isoDateFormatter.date(from: "2023-11-09T16:45:00-06:00")!,
+        startTime: isoDateFormatter.date(from: "2023-11-09T17:10:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-09T17:15:00-06:00")!,
         stage: "",
         description:
 """
@@ -492,8 +551,8 @@ Breakout B - VIP Space
             odell,
             marty
         ],
-        startTime: isoDateFormatter.date(from: "2023-11-09T16:45:00-06:00")!,
-        endTime: isoDateFormatter.date(from: "2023-11-09T18:00:00-06:00")!,
+        startTime: isoDateFormatter.date(from: "2023-11-09T17:15:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-09T18:30:00-06:00")!,
         stage: "",
         description:
 """
@@ -506,9 +565,9 @@ Networking
         name: "Dinner",
         speakers: [
         ],
-        startTime: isoDateFormatter.date(from: "2023-11-09T18:00:00-06:00")!,
-        endTime: isoDateFormatter.date(from: "2023-11-09T20:00:00-06:00")!,
-        stage: "TBD",
+        startTime: isoDateFormatter.date(from: "2023-11-09T17:15:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-09T20:15:00-06:00")!,
+        stage: "Chivanada Food Truck Onsite - Accepts Bitcoin",
         description:
 """
 """
@@ -519,20 +578,21 @@ Networking
         name: "Afterparty",
         speakers: [
         ],
-        startTime: isoDateFormatter.date(from: "2023-11-09T20:00:00-06:00")!,
-        endTime: isoDateFormatter.date(from: "2023-11-09T23:00:00-06:00")!,
-        stage: "Acme Feed and Seed",
+        startTime: isoDateFormatter.date(from: "2023-11-09T19:30:00-06:00")!,
+        endTime: isoDateFormatter.date(from: "2023-11-09T22:30:00-06:00")!,
+        stage: "Acme Feed and Seed - 101 Broadway, Nashville, TN 37201",
         description:
 """
 """
     )
 
-    static let sessionWelcome2 = Session(
-        id: "welcome-2",
-        name: "Welcome",
+    static let sessionWelcomeBack = Session(
+        id: "welcome-back",
+        name: "Welcome Back",
         speakers: [
             rod,
-            rockstar
+            rockstar,
+            mads
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T09:45:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
@@ -552,7 +612,7 @@ Networking
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T10:45:00-06:00")!,
-        stage: "",
+        stage: "Everyone - Event Space",
         description:
 """
 """
@@ -567,21 +627,21 @@ Networking
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:45:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
-        stage: "",
+        stage: "Everyone - Event Space",
         description:
 """
 """
     )
 
-    static let session10MinutePresentations2 = Session(
-        id: "10-minute-presentations-2",
+    static let session10MinutePresentations3 = Session(
+        id: "10-minute-presentations-3",
         name: "10 minute presentations",
         speakers: [
-            zach,
+            dontGrowWeary,
+            w3irdrobot,
             seth,
             david,
-            dontGrowWeary,
-            w3irdrobot
+            abbot
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
@@ -590,10 +650,10 @@ Networking
 """
 4 - 10 minute with 5 minute Q&A
 
-Zach - Flockstr
+Don't Grow Weary, w3irdrobot - Voltage
 Seth - nostr.cooking
 David Strayhorn - Pretty Good
-Don't Grow Weary, w3irdrobot - Voltage
+Abbot - abbot.atlbitlab.com
 """
     )
 
@@ -625,8 +685,8 @@ Don't Grow Weary, w3irdrobot - Voltage
 """
     )
 
-    static let sessionClosingKeynote2 = Session(
-        id: "closing-keynote-2",
+    static let sessionClosingKeynote = Session(
+        id: "closing-keynote",
         name: "Closing Keynote",
         speakers: [
             avi,
@@ -645,23 +705,25 @@ Nostr Nests - Plebchain Radio
     static let sessions = [
         sessionWelcomeAndGoals,
         session15SecIntros,
-        sessionKeynote,
+        sessionWhatIsNostr,
         sessionLunch,
         sessionPlebs,
         session10MinutePresentations1,
         sessionOnboardingPeopleOnToNostr,
         sessionNipsRoundtable,
-        sessionClosingKeynote1,
+        sessionHrf,
+        session10MinutePresentations2,
+        sessionClosingRemarks,
         sessionLiveRabbitHoleRecapHappyHour,
         sessionDinner,
         sessionAfterparty,
-        sessionWelcome2,
+        sessionWelcomeBack,
         sessionNipsIrl,
         sessionWhyNostr,
-        session10MinutePresentations2,
+        session10MinutePresentations3,
         sessionNostrasia,
         sessionDamusBreakout,
-        sessionClosingKeynote2
+        sessionClosingKeynote
     ]
 
     static let organizers = [
