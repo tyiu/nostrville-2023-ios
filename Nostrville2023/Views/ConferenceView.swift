@@ -186,6 +186,18 @@ First Principle: If Your Life Is A Mess, Bitcoin Will Not Fix This
         lightningIdentifier: "talentsminas@getalby.com"
     )
 
+    static let katie = Person(
+        nostrPublicKey: "npub1jrcfyw8n298jf83txvlxzx0w7jtfwqs0j4ha0dnn9ns33hgm209sqejdcc",
+        name: "Katie Ross",
+        description:
+"""
+Survivor. Author. Inspirational Speaker. Mother.
+Derek's Wife 😘
+""",
+        picture: "katie",
+        lightningIdentifier: "numbingpie48@walletofsatoshi.com"
+    )
+
     static let mads = Person(
         nostrPublicKey: "npub1rpes5hhk6mxun5ddt5kecxfm8y3xdr0h5jwal32mc6mxafr48hxsaj2et2",
         name: "mads",
@@ -614,7 +626,7 @@ Networking
         name: "NIPS IRL",
         speakers: [
             mads,
-            roya,
+            katie,
             mallory
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
