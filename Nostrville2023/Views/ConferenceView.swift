@@ -343,6 +343,14 @@ https://nostrlobby.com
         lightningIdentifier: "boldrain193@getalby.com"
     )
 
+    static let tomjmaxwell = Person(
+        nostrPublicKey: "npub10rtnn83pgjkez23qr2d2tqhxq50jjl6xvux0dkf5qh2w6tkpe3tq30xqlg",
+        name: "Tom Maxwell",
+        description: "liberty equality solidarity | Nashville",
+        picture: "tomjmaxwell",
+        lightningIdentifier: "tomjmaxwell@ln.tips"
+    )
+
     static let tony = Person(
         nostrPublicKey: "npub1t0nyg64g5vwprva52wlcmt7fkdr07v5dr7s35raq9g0xgc0k4xcsedjgqv",
         name: "Tony",
@@ -752,6 +760,7 @@ Nostr Nests - Plebchain Radio
         mjgbtc,
         smash,
         timot,
+        tomjmaxwell,
         tyiu
     ]
 
