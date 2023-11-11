@@ -700,7 +700,9 @@ Derek Ross - Nostr Nests
         speakers: [
             avi,
             doc,
-            quietWarrior
+            quietWarrior,
+            odell,
+            rockstar
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T14:00:00-06:00")!,
