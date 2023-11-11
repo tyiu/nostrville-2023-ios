@@ -543,7 +543,7 @@
 				CODE_SIGN_ENTITLEMENTS = Nostrville2023/Nostrville2023.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Nostrville2023/Preview Content\"";
 				DEVELOPMENT_TEAM = S99A5B637C;
@@ -586,7 +586,7 @@
 				CODE_SIGN_ENTITLEMENTS = Nostrville2023/Nostrville2023.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Nostrville2023/Preview Content\"";
 				DEVELOPMENT_TEAM = S99A5B637C;
