@@ -67,6 +67,14 @@ struct ConferenceView_Previews: PreviewProvider {
         lightningIdentifier: "atlbitlabbot@getalby.com"
     )
 
+    static let ashhash = Person(
+        nostrPublicKey: "npub1xhzdq9ehq2vtzpahy52snsxls43gzxx6tvhzr960z9ynz8jxhsus8hrppk",
+        name: "Ashhash",
+        description: "Nothing is real.",
+        picture: "ashhash",
+        lightningIdentifier: "malegosling70@walletofsatoshi.com"
+    )
+
     static let avi = Person(
         nostrPublicKey: "npub1hqaz3dlyuhfqhktqchawke39l92jj9nt30dsgh2zvd9z7dv3j3gqpkt56s",
         name: "Avi Burra",
@@ -530,25 +538,6 @@ Everyone - Event Space
 """
     )
 
-    static let session10MinutePresentations2 = Session(
-        id: "10-minute-presentations-2",
-        name: "10 minute presentations",
-        speakers: [
-            derekross,
-            zach
-        ],
-        startTime: isoDateFormatter.date(from: "2023-11-09T16:40:00-06:00")!,
-        endTime: isoDateFormatter.date(from: "2023-11-09T17:10:00-06:00")!,
-        stage: "",
-        description:
-"""
-2 - 10 minute with 5 minute Q&A
-
-Derek - Nostr Nests
-Zach - Flockstr
-"""
-    )
-
     static let sessionClosingRemarks = Session(
         id: "closing-remarks",
         name: "Closing Remarks",
@@ -627,7 +616,8 @@ Networking
         speakers: [
             mads,
             katie,
-            mallory
+            mallory,
+            ashhash
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T10:00:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T10:45:00-06:00")!,
@@ -652,15 +642,15 @@ Networking
 """
     )
 
-    static let session10MinutePresentations3 = Session(
-        id: "10-minute-presentations-3",
+    static let session10MinutePresentations2 = Session(
+        id: "10-minute-presentations-2",
         name: "10 minute presentations",
         speakers: [
             dontGrowWeary,
             w3irdrobot,
             seth,
             david,
-            abbot
+            derekross
         ],
         startTime: isoDateFormatter.date(from: "2023-11-10T11:30:00-06:00")!,
         endTime: isoDateFormatter.date(from: "2023-11-10T12:30:00-06:00")!,
@@ -672,7 +662,7 @@ Networking
 Don't Grow Weary, w3irdrobot - Voltage
 Seth - nostr.cooking
 David Strayhorn - Pretty Good
-Abbot - abbot.atlbitlab.com
+Derek Ross - Nostr Nests
 """
     )
 
@@ -731,7 +721,6 @@ Nostr Nests - Plebchain Radio
         sessionOnboardingPeopleOnToNostr,
         sessionNipsRoundtable,
         sessionHrf,
-        session10MinutePresentations2,
         sessionClosingRemarks,
         sessionLiveRabbitHoleRecapHappyHour,
         sessionDinner,
@@ -739,7 +728,7 @@ Nostr Nests - Plebchain Radio
         sessionWelcomeBack,
         sessionNipsIrl,
         sessionWhyNostr,
-        session10MinutePresentations3,
+        session10MinutePresentations2,
         sessionNostrasia,
         sessionDamusBreakout,
         sessionClosingKeynote
