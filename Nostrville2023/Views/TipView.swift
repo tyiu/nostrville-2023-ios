@@ -14,7 +14,7 @@ struct TipView: View {
     var person: Person
     @Binding var showTipSheet: Bool
 
-    @State var amount: String = "1,000"
+    @State var amount: String = 1000.formatted()
     @State var comment: String = "Thanks for being awesome at Nostrville!"
 
     var body: some View {
